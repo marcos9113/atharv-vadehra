@@ -1,0 +1,815 @@
+<!doctype html>
+<html lang="en">
+   
+<!-- Mirrored from slimhamdi.net/salimov/demos/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Feb 2023 10:26:42 GMT -->
+<head>
+      <title>Salimov - Horizontal Personal Portfolio</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Template Google Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com/">
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@100;200;300;400;500;600;700&amp;family=Oswald:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+      <!-- Template CSS Files -->
+      <link rel="stylesheet" href="css/devicon.min.css">
+      <link rel="stylesheet" href="css/all.min.css">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/swiper-bundle.min.css">
+      <link rel="stylesheet" href="css/animate.min.css">
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <!-- CSS Skin File -->
+      <link rel="stylesheet" href="css/skins/yellow.css">
+      <!-- Live Style Switcher - demo only -->
+      <link rel="alternate stylesheet" type="text/css" title="yellow" href="css/skins/yellow.css">
+      <link rel="alternate stylesheet" type="text/css" title="blue" href="css/skins/blue.css">
+      <link rel="alternate stylesheet" type="text/css" title="green" href="css/skins/green.css">
+      <link rel="alternate stylesheet" type="text/css" title="red" href="css/skins/red.css">
+      <link rel="alternate stylesheet" type="text/css" title="yellowgreen" href="css/skins/yellowgreen.css">
+      <link rel="alternate stylesheet" type="text/css" title="orange" href="css/skins/orange.css">
+      <link rel="alternate stylesheet" type="text/css" title="pink" href="css/skins/pink.css">
+      <link rel="alternate stylesheet" type="text/css" title="goldenrod" href="css/skins/goldenrod.css">
+      <link rel="alternate stylesheet" type="text/css" title="turquoise" href="css/skins/turquoise.css">
+      <link rel="stylesheet" type="text/css" href="css/styleswitcher.css">
+   </head>
+   <body>
+      <!-- Live Style Switcher Starts - demo only -->
+      <div id="switcher" class="">
+         <div class="content-switcher">
+            <h4>COLOR SWITCHER</h4>
+            <ul>
+               <li>
+                  <a href="#" onclick="setActiveStyleSheet('yellow');" title="yellow" class="color"><img src="assets/styleswitcher/yellow.png" alt="yellow"></a>
+               </li>
+               <li>
+                  <a href="#" onclick="setActiveStyleSheet('green');" title="green" class="color"><img src="assets/styleswitcher/green.png" alt="green"></a>
+               </li>
+               <li>
+                  <a href="#" onclick="setActiveStyleSheet('red');" title="red" class="color"><img src="assets/styleswitcher/red.png" alt="red"></a>
+               </li>
+               <li>
+                  <a href="#" onclick="setActiveStyleSheet('blue');" title="blue" class="color"><img src="assets/styleswitcher/blue.png" alt="blue"></a>
+               </li>
+               <li>
+                  <a href="#" onclick="setActiveStyleSheet('orange');" title="orange" class="color"><img src="assets/styleswitcher/orange.png" alt="orange"></a>
+               </li>
+               <li>
+                  <a href="#" onclick="setActiveStyleSheet('yellowgreen');" title="yellowgreen" class="color"><img src="assets/styleswitcher/yellowgreen.png" alt="yellowgreen"></a>
+               </li>
+               <li>
+                  <a href="#" onclick="setActiveStyleSheet('pink');" title="pink" class="color"><img src="assets/styleswitcher/pink.png" alt="pink"></a>
+               </li>
+               <li>
+                  <a href="#" onclick="setActiveStyleSheet('goldenrod');" title="goldenrod" class="color"><img src="assets/styleswitcher/goldenrod.png" alt="goldenrod"></a>
+               </li>
+            </ul>
+            <div id="hideSwitcher">&times;</div>
+         </div>
+      </div>
+      <div id="showSwitcher" class="styleSecondColor"><i class="fa fa-cog"></i></div>
+      <!-- Live Style Switcher Ends - demo only -->
+      <!-- PRELOADER STARTS -->
+      <div id="preloader">
+         <div class="line"></div>
+      </div>
+      <!-- PRELOADER ENDS -->
+      <!-- WRAPPER STARTS -->
+      <div class="page-content">
+         <!-- HEADER STARTS -->
+         <header>
+            <!-- Desktop Menu Starts -->
+            <div class="header-inner hide-mobile">
+               <!-- MENU STARTS -->
+               <div class="menu">
+                  <nav>
+                     <ul>
+                        <li><span class="active" id="home-link">Home</span></li>
+                        <li><span id="about-link">About</span></li>
+                        <li><span id="portfolio-link">Portfolio</span></li>
+                        <li><span id="contact-link">Contact</span></li>
+                        <li><span id="blog-link">Blog</span></li>
+                     </ul>
+                  </nav>
+               </div>
+               <!-- MENU ENDS -->
+               <!-- FREELANCE STARTS -->
+               <div class="mail">
+                  <p>
+                     Email : 
+                     <span>vadehraatharv@gmail.com</span>
+                  </p>
+               </div>
+               <!-- FREELANCE ENDS -->
+            </div>
+            <!-- Desktop Menu Ends -->
+            <!-- Mobile Menu Starts -->
+            <nav class="mobile-menu">
+               <div id="menuToggle">
+                  <input type="checkbox" id="checkboxmenu">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <ul class="list-unstyled" id="menu">
+                     <li><a href="#home"><span>Home</span></a></li>
+                     <li><a href="#my-photo"><span>About</span></a></li>
+                     <li><a href="#portfolio"><span>Portfolio</span></a></li>
+                     <li><a href="#contact"><span>Contact</span></a></li>
+                     <li><a href="#blog"><span>Blog</span></a></li>
+                  </ul>
+               </div>
+            </nav>
+            <!-- Mobile Menu Ends -->
+         </header>
+         <!-- HEADER ENDS -->
+         <div id="wrapper">
+            <main class="flex-column-mobile">
+               <!-- HOME SECTION STARTS -->
+               <section class="home image" id="home">
+                  <div>
+                     <div class="position-relative">
+                        <h1>
+                           <span>
+                              <span class="animated-layer">
+                                 Hello<span>.</span>
+                              </span>
+                           </span>
+                           <span class="position-relative">
+                              <span class="animated-layer">
+                              I am
+                              </span>
+                              <span class="intro animated-layer">
+                                 Cyber Security Enthusiast,<span></span>  Interactive Technologies Student
+                              </span>
+                           </span>
+                           <span>
+                              <span class="animated-layer">
+                              Atharv
+                              </span>
+                           </span>
+                        </h1>
+                     </div>
+                  </div>
+                  <!-- CALL TO ACTION STARTS -->
+                  <span class="animated-layer animated-btn cta" id="cta">
+                     <span>
+                     </span>
+                  </span>
+                  <!-- CALL TO ACTION ENDS -->
+               </section>
+               <!-- HOME SECTION ENDS -->
+               <!-- ABOUT SECTION STARTS -->
+               <section class="about main-section flex-column-mobile" id="about">
+                  <!-- INFO HOLDER STARTS -->
+                  <div class="info flex-column-mobile">
+                     <!-- IMAGE STARTS -->
+                     <div class="img-container animated-layer image-animation my-photo-container fadeInUp wow" data-wow-offset="200" id="my-photo">
+                        <div>
+                           <div>
+                              <img class="my-photo" src="_MG_7738.jpg" alt="">
+                           </div>
+                        </div>
+                     </div>
+                     <!-- IMAGE ENDS -->
+                     <!-- INFO STARTS -->
+                     <div>
+                        <h2>
+                           <span>
+                           <span class="animated-layer fade-in-up-animation fadeInUp wow">
+                           Atharv
+                           </span>
+                           </span>
+                           <span>
+                           <span class="animated-layer fade-in-up-animation fadeInUp wow">
+                           Vadehra
+                           </span>
+                           </span>
+                        </h2>
+                        <div class="infos">
+                           <ul>
+                              <li>
+                                 <span>
+                                 <span class="animated-layer fade-in-up-animation fadeInUp wow">
+                                 <span>Address :</span>
+                                 <span>Bangalore</span>
+                                 </span>
+                                 </span>
+                              </li>
+                              <li>
+                                 <span>
+                                 <span class="animated-layer fade-in-up-animation fadeInUp wow">
+                                 <span>Phone :</span>
+                                 <span>+91 9971714292</span>
+                                 </span>
+                                 </span>
+                              </li>
+                              <li>
+                                 <span>
+                                 <span class="animated-layer fade-in-up-animation fadeInUp wow">
+                                 <span>Email :</span>
+                                 <span>vadehraatharv@gmail.com</span>
+                                 </span>
+                                 </span>
+                              </li>
+                              <li>
+                                 <span>
+                                 <span class="animated-layer fade-in-up-animation fadeInUp wow">
+                                 <span>Github :</span>
+                                 <span>marcos9113</span>
+                                 </span>
+                                 </span>
+                              </li>
+                              <li>
+                                 <span>
+                                 <span class="animated-layer fade-in-up-animation fadeInUp wow">
+                                 <span>Linkdin :</span>
+                                 <span>@atharv-vadehra</span>
+                                 </span>
+                                 </span>
+                              </li>
+                              <li>
+                                 <span>
+                                 <span class="animated-layer fade-in-up-animation fadeInUp wow">
+                                 <span>Hack The Box :</span>
+                                 <span>atharvvadehra</span>
+                                 </span>
+                                 </span>
+                              </li>
+                           </ul>
+                           
+                           
+                        </div>
+                     </div>
+                     <!-- INFO ENDS -->
+                  </div>
+                  <!-- INFO HOLDER ENDS -->
+                  <!-- SKILLS STARTS -->
+                  <div class="skills flex-column-mobile">
+                     <!-- TITLE STARTS -->
+                     <div class="custom-title">
+                        <!-- MAIN TITLE STARTS -->
+                        <h3>
+                           <span>
+                           <span class="animated-layer fade-in-left-animation fadeInUp wow">
+                           My Skills
+                           </span>
+                           </span>
+                        </h3>
+                        <!-- MAIN TITLE ENDS -->
+                     </div>
+                     <!-- TITLE ENDS -->
+                     <div class="skills-content">
+                        <div>
+                           <!-- SKILL ITEM STARTS -->
+                           <div class="animated-layer fade-in-down-animation fadeInLeft wow">
+                              <span>
+                                 <i class="fa-brands fa-linux"></i>
+                              </span>
+                              <h4>
+                                 Linux
+                              </h4>
+                           </div>
+                           <!-- SKILL ITEM ENDS -->
+                           <!-- SKILL ITEM STARTS -->
+                           <div class="animated-layer fade-in-up-animation fadeInRight wow">
+                              <span>
+                                 <i class="fa-brands fa-css3-alt"></i>  
+                              </span>
+                              <h4>
+                                 CSS
+                              </h4>
+                           </div>
+                           <!-- SKILL ITEM ENDS -->
+                        </div>
+                        <div>
+                           <!-- SKILL ITEM STARTS -->
+                           <div class="animated-layer fade-in-down-animation fadeInLeft wow">
+                              <span>
+                                 <i class="fa-solid fa-shield-halved"></i>
+                              </span>
+                              <h4>
+                                 DevSecOps
+                              </h4>
+                           </div>
+                           <!-- SKILL ITEM ENDS -->
+                           <!-- SKILL ITEM STARTS -->
+                           <div class="animated-layer fade-in-up-animation fadeInRight wow">
+                              <span>
+                                 <i class="fa-brands fa-js"></i>  
+                              </span>
+                              <h4>
+                                 Javascript
+                              </h4>
+                           </div>
+                           <!-- SKILL ITEM ENDS -->
+                        </div>
+                        <div>
+                           <!-- SKILL ITEM STARTS -->
+                           <div class="animated-layer fade-in-down-animation fadeInLeft wow">
+                              <span>
+                              <i class="fa-brands fa-python"></i>
+                              </span>
+                              <h4>
+                                 Python
+                              </h4>
+                           </div>
+                           <!-- SKILL ITEM ENDS -->
+                           <!-- SKILL ITEM STARTS -->
+                           <div class="animated-layer fade-in-up-animation fadeInRight wow">
+                              <span>
+                                 <i class="fa-solid fa-r"></i>
+                              </span>
+                              <h4>
+                                 R
+                              </h4>
+                           </div>
+                           <!-- SKILL ITEM ENDS -->
+                        </div>
+                        <div>
+                           <!-- SKILL ITEM STARTS -->
+                           <div class="animated-layer fade-in-down-animation fadeInLeft wow">
+                              <span>
+                                 <i class="fa-solid fa-wifi"></i>
+                              </span>
+                              <h4>
+                                 Internet of Things
+                              </h4>
+                           </div>
+                           <!-- SKILL ITEM ENDS -->
+                           <!-- SKILL ITEM STARTS -->
+                           <div class="animated-layer fade-in-up-animation fadeInRight wow">
+                              <span>
+                                 <i class="fa-brands fa-html5"></i>
+                              </span>
+                              <h4>
+                                 HTML
+                              </h4>
+                           </div>
+                           <!-- SKILL ITEM ENDS -->
+                        </div>
+                     </div>
+                  </div>
+                  <!-- SKILLS ENDS -->
+                  <!-- RESUME STARTS -->
+                  <div class="resume flex-column-mobile">
+                     <!-- TITLE STARTS -->
+                     <div class="custom-title fadeInUp wow">
+                        <!-- MAIN TITLE STARTS -->
+                        <h3>
+                           <span>
+                           <span class="animated-layer fade-in-left-animation">
+                           My Education
+                           </span>
+                           </span>
+                        </h3>
+                        <!-- MAIN TITLE ENDS -->
+                     </div>
+                     <!-- TITLE ENDS -->
+                     <!-- TIMELINE STARTS -->
+                     <div class="timeline">
+                        <ol class="animated-layer fade-in-animation">
+                           <!-- TIMELINE ITEM STARTS -->
+                           <li>
+                              <div class="animated-layer fade-in-down-animation fadeInUp wow">
+                                 <div class="experience">
+                                    <h4>
+                                       Class 10th
+                                    </h4>
+                                    <p>
+                                       <i class="fa-regular fa-clock"></i>
+                                       <span>2019</span>
+                                    </p>
+                                    <p>
+                                       <i class="fa-regular fa-building"></i> 
+                                       <span>Delhi Public School</span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </li>
+                           <!-- TIMELINE ITEM ENDS -->
+                           <!-- TIMELINE ITEM STARTS -->
+                           <li>
+                              <div class="animated-layer fade-in-up-animation fadeInUp wow">
+                                 <div class="experience">
+                                    <h4>
+                                       Class 12th
+                                    </h4>
+                                    <p>
+                                       <i class="fa-regular fa-clock"></i>
+                                       <span>2021</span>
+                                    </p>
+                                    <p>
+                                       <i class="fa-regular fa-building"></i> 
+                                       <span>Delhi Public School</span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </li>
+                           <!-- TIMELINE ITEM ENDS -->
+                           <!-- TIMELINE ITEM STARTS -->
+                           <li>
+                              <div class="animated-layer fade-in-down-animation fadeInUp wow">
+                                 <div class="experience">
+                                    <h4>
+                                       B.Tech Inaractive Technologies
+                                    </h4>
+                                    <p>
+                                       <i class="fa-regular fa-clock"></i>
+                                       <span>2021 - NOW</span>
+                                    </p>
+                                    <p>
+                                       <i class="fa-regular fa-building"></i> 
+                                       <span>Atria University</span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </li>
+                           <!-- TIMELINE ITEM ENDS -->
+                           <!-- TIMELINE ITEM STARTS -->
+                           <!-- <li>
+                              <div class="animated-layer fade-in-up-animation fadeInUp wow">
+                                 <div class="education">
+                                    <h4>
+                                       Master Degree
+                                    </h4>
+                                    <p>
+                                       <i class="fa-regular fa-clock"></i>
+                                       <span>2003</span>
+                                    </p>
+                                    <p>
+                                       <i class="fa-solid fa-building-columns"></i>
+                                       <span>London University</span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </li> -->
+                           <!-- TIMELINE ITEM ENDS -->
+                           <!-- TIMELINE ITEM STARTS -->
+                           <!-- <li>
+                              <div class="animated-layer fade-in-down-animation fadeInUp wow">
+                                 <div class="education">
+                                    <h4>
+                                       Bachelor Degree
+                                    </h4>
+                                    <p>
+                                       <i class="fa-regular fa-clock"></i>
+                                       <span>1999</span>
+                                    </p>
+                                    <p>
+                                       <i class="fa-solid fa-building-columns"></i>
+                                       <span>Berlin High School</span>
+                                    </p>
+                                 </div>
+                              </div>
+                           </li> --> 
+                           <!-- TIMELINE ITEM ENDS -->
+                           <li></li>
+                        </ol>
+                     </div>
+                     <!-- TIMELINE ENDS -->
+                  </div>
+                  <!-- RESUME ENDS -->
+                  <img alt="" class="separator hide-mobile" src="assets/separator.png">
+               </section>
+               <!-- ABOUT SECTION ENDS -->
+               <img alt="" class="separator-mobile-down hide-desktop z-1" src="assets/separator-mobile-down.png">
+               <!-- PORTFOLIO SECTION STARTS -->
+               <img alt="" class="separator-mobile-up hide-desktop z-1" src="assets/separator-mobile-up.png">
+               <!-- PORTFOLIO SECTION STARTS -->
+               <section class="portfolio main-section flex-column-mobile" id="portfolio">
+                  <!-- TITLE STARTS -->
+                  <div class="custom-title">
+                     <!-- MAIN TITLE STARTS -->
+                     <h3>
+                        <span>
+                        <span class="animated-layer fade-in-left-animation fadeInUp wow">
+                        My Projects
+                        </span>
+                        </span>
+                     </h3>
+                     <!-- MAIN TITLE ENDS -->
+                  </div>
+                  <!-- TITLE ENDS -->
+                  <div class="swiper swiper-portfolio animated-layer fade-in-right-animation fadeInUp wow" data-wow-offset="200">   
+                     <div class="swiper-wrapper">
+                        <!-- PORTFOLIO ITEM STARTS -->
+                        <div class="single-item swiper-slide">
+                           <!-- ITEM MAIN CONTENT STARTS -->
+                           <div class="main-content">
+                              <img class="img-fluid" src="https://www.opendatasoft.com/wp-content/uploads/2022/08/Blog-thumbnail.png" alt="Image Project">
+                           </div>
+                           <!-- ITEM MAIN CONTENT ENDS -->
+                           <!-- ITEM DETAILS STARTS -->
+                           <div class="details">
+                              <h4 style="font-size:xx-large;">Education Data Visualization & Analysis</h4>
+                              <div>
+                                 <ul>
+                                    <li>
+                                       <span>
+                                       <i class="fa-regular fa-file-lines"></i> Project :
+                                       </span>
+                                       <span>Data Visualization</span>
+                                    </li>
+                                    <li>
+                                       <span><i class="fa-regular fa-user"></i> Project :</span>
+                                       <span>Personal</span>
+                                    </li>
+                                    <li>
+                                       <span><i class="fa-regular fa-hourglass"></i> Duration :</span>
+                                       <span>3 Days</span>
+                                    </li>
+                                    <li> 
+                                       <span><i class="fa-solid fa-code-branch"></i>Technologies :</span>
+                                       <span>R</span>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <a href="https://github.com/marcos9113/Data-Visualization-Education.git" target="_blank" class="custom-btn">
+                              <span>Github Repository <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                              </a>
+                           </div>
+                           <!-- ITEM DETAILS ENDS -->
+                        </div>
+
+
+
+                        <div class="single-item swiper-slide">
+                           <!-- ITEM MAIN CONTENT STARTS -->
+                           <div class="main-content">
+                              <img class="img-fluid" src="https://www.metacompliance.com/wp-content/uploads/2020/10/Malware.jpg" alt="Image Project">
+                           </div>
+                           <!-- ITEM MAIN CONTENT ENDS -->
+                           <!-- ITEM DETAILS STARTS -->
+                           <div class="details">
+                              <h4>Password Stealing With Python</h4>
+                              <div>
+                                 <ul>
+                                    <li>
+                                       <span>
+                                       <i class="fa-regular fa-file-lines"></i> Project :
+                                       </span>
+                                       <span>DevSecOps</span>
+                                    </li>
+                                    <li>
+                                       <span><i class="fa-regular fa-user"></i> Project :</span>
+                                       <span>Personal</span>
+                                    </li>
+                                    <li>
+                                       <span><i class="fa-regular fa-hourglass"></i> Duration :</span>
+                                       <span>2 Days</span>
+                                    </li>
+                                    <li> 
+                                       <span><i class="fa-solid fa-code-branch"></i>Technologies :</span>
+                                       <span>Python</span>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <a href="https://github.com/marcos9113/password_malware.git" target="_blank" class="custom-btn">
+                              <span>Github Repository <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                              </a>
+                           </div>
+                           <!-- ITEM DETAILS ENDS -->
+                        </div>
+
+                     </div>
+                     <div class="nav-item next-item animated-btn"><span></span></div>
+                     <div class="nav-item prev-item animated-btn"><span></span></div>
+                  </div>
+                  <img alt="" class="separator hide-mobile" src="assets/separator.png">
+               </section>
+               <!-- PORTFOLIO SECTION ENDS -->
+               <img alt="" class="separator-mobile-down hide-desktop z-1" src="assets/separator-mobile-down.png">
+
+
+               <!-- TESTIMONIALS SECTION STARTS -->
+
+               <section class="testimonials">
+                  <div class="testimonials-container flex-column-mobile">
+                     <!-- TESTIMONIAL ITEM STARTS -->
+                     <div class="quote-container animated-layer fade-in-right-animation fadeInUp wow">
+                        <div>
+                           <p>
+                              <span class="quote " style="font-size: small;">
+                              "I have had the pleasure of working with Atharv and I can confidently say that they are an exceptional professional. He consistently demonstrates a strong work ethic, attention to detail, and a deep understanding of iOT and Cyber security.
+
+                              In addition to his technical skills, Atharv is an excellent communicator and has a talent for building strong relationships with colleagues, clients, and stakeholders. He is always willing to lend a hand and share his knowledge and expertise with others. Wishing him all the best for his future endeavours."
+                              </span>
+                              <span class="person">Lakshay Kumar</span>
+                              <span class="job">Teammate - Atria University</span>
+                           </p>
+                           <img src="https://media.licdn.com/dms/image/C4D03AQHt0_h1QTyVyg/profile-displayphoto-shrink_400_400/0/1657084672052?e=1681948800&v=beta&t=zMH2Rj3uo3PMfNMzVHWTIIoSGaJtYVIfHAyHvmslI0Y" alt="">
+                        </div>
+                     </div>
+                     <!-- TESTIMONIAL ITEM ENDS -->
+                     <!-- TESTIMONIAL ITEM STARTS -->
+                     <!-- <div class="quote-container animated-layer fade-in-right-animation fadeInUp wow">
+                        <div>
+                           <p>
+                              <span class="quote">
+                              " Steven is a great help managing a very out of date website. Everything we ask him to do is done quickly and efficiently, we would be lost without him. "
+                              </span>
+                              <span class="person">Mark Eliott</span>
+                              <span class="job">Manager - Envato</span>
+                           </p>
+                           <img src="assets/testimonials/testimonial-2.jpg" alt="">
+                        </div>
+                     </div> -->
+                     <!-- TESTIMONIAL ITEM ENDS -->
+                  </div>
+                  <img alt="" class="z-1 hide-mobile opposite-separator" src="assets/separator-opposite.png">
+               </section>
+               <!-- TESTIMONIALS SECTION ENDS -->
+               <img alt="" class="separator-mobile-up hide-desktop z-1" src="assets/separator-mobile-up.png">
+               <!-- CONTACT SECTION STARTS -->
+               <section class="contact main-section flex-column-mobile" id="contact">
+                  <!-- TITLE STARTS -->
+                  <div class="custom-title">
+                     <!-- MAIN TITLE STARTS -->
+                     <h3>
+                        <span>
+                        <span class="animated-layer fade-in-left-animation fadeInUp wow">
+                        Get in touch
+                        </span>
+                        </span>
+                     </h3>
+                     <!-- MAIN TITLE ENDS -->
+                  </div>
+                  <!-- TITLE ENDS -->
+                  <!-- CONTACTS STARTS -->
+                  <div class="boxes">
+                     <div>
+                        <!-- CONTACT ITEM STARTS -->
+                        <div class="animated-layer fade-in-down-animation fadeInUp wow">
+                           <i class="fa fa-phone"></i>
+                           <p> 
+                              <span class="small-text">phone</span>
+                              +91 9971714292
+                           </p>
+                        </div>
+                        <!-- CONTACT ITEM ENDS -->
+                        <!-- CONTACT ITEM STARTS -->
+                        
+                        <div class="animated-layer fade-in-up-animation fadeInUp wow">
+                           <i class="fa fa-location-dot"></i>
+                           <p> 
+                              <span class="small-text">address</span>
+                              Bangalore, India
+                           </p>
+                        </div>
+                        <!-- CONTACT ITEM ENDS -->
+                     </div>
+                     <div>
+                        <!-- CONTACT ITEM STARTS -->
+                        <div class="animated-layer fade-in-down-animation fadeInUp wow">
+                           <i class="fa fa-envelope"></i>
+                           <p> 
+                              <span class="small-text">email</span>
+                              vadehraatharv@gmail.com
+                           </p>
+                        </div>
+                        <!-- CONTACT ITEM ENDS -->
+                        <!-- CONTACT ITEM STARTS -->
+                        <div class="animated-layer fade-in-up-animation fadeInUp wow">
+                           <i class="fa fa-share-nodes"></i>
+                           <span class="small-text">follow me</span>
+                           <ul class="social">
+                              <li>
+                                 <a href="https://github.com/marcos9113">
+                                 <i class="fa-brands fa-github"></i>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://www.linkedin.com/in/atharv-vadehra/">
+                                 <i class="fa-brands fa-linkedin"></i>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://www.instagram.com/atharv_v_17/">
+                                 <i class="fa-brands fa-instagram"></i>
+                                 </a>
+                              </li>
+                              <li>
+                                 <a href="https://app.hackthebox.com/profile/369702">
+                                    <i class="fa-solid fa-box"></i>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                        <!-- CONTACT ITEM ENDS -->
+                     </div>
+                  </div>
+                  <!-- CONTACTS ENDS -->
+                  <img alt="" class="separator hide-mobile" src="assets/separator.png">
+               </section>
+               <!-- CONTACT SECTION ENDS -->
+               <img alt="" class="separator-mobile-down hide-desktop z-1" src="assets/separator-mobile-down.png">
+              
+               <!-- BLOG SECTION STARTS -->
+               <section class="blog main-section flex-column-mobile" id="blog">
+                  <!-- TITLE STARTS -->
+                  <div class="custom-title">
+                     <!-- MAIN TITLE STARTS -->
+                     <h3>
+                        <span>
+                        <span class="animated-layer fade-in-left-animation fadeInUp wow">
+                        Latest Posts
+                        </span>
+                        </span>
+                     </h3>
+                     <!-- MAIN TITLE ENDS -->
+                  </div>
+                  <!-- TITLE ENDS -->
+                  <!-- LATEST POSTS STARTS -->
+                  <div class="latestposts flex-column-mobile">
+                     <!-- POST ITEM STARTS -->
+                     <div class="animated-layer fade-in-right-animation fadeInUp wow">
+                        <a href="blog-post.html">
+                           <span class="img-holder">
+                           <img src="assets/blog/blog-post-1.jpg" alt="">
+                           </span>
+                           <div class="content">
+                              <span class="category"></span>
+                              <span class="title">
+                              Comming Soon
+                              </span>
+                              <p>
+                                 Comming Soon
+                              </p>
+                              <div class="meta d-flex align-items-center">
+                                 <div class="d-flex align-items-center">
+                                    <i class="fa-regular fa-calendar"></i>
+                                    <span>9 Apr 2022</span>
+                                 </div>
+                                 <div class="d-flex align-items-center">
+                                    <i class="fa-regular fa-comments"></i>
+                                    <span>17 comments</span>
+                                 </div>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <!-- POST ITEM ENDS -->
+
+                     <!-- POST ITEM STARTS -->
+                  
+
+                  </div>
+                  <!-- LATEST POSTS ENDS -->
+                  
+               </section>
+               <!-- BLOG SECTION ENDS -->
+               <img alt="" class="hide-desktop z-1" src="assets/separator-copyright-mobile.png">
+               <!-- COPYRIGHT SECTION STARTS -->
+               <section class="copyright">
+                  <img alt="" class="z-1 hide-mobile" src="assets/separator-copyright.png">
+                  <div>
+                     <span>&#169; 2023 Steven Walker</span>
+                     <span>Designed By <a target="_blank" href="https://themeforest.net/user/celtano/portfolio">Celtano</a></span>
+                     <ul>
+                        <li>
+                           <a href="#">
+                           <i class="fa-brands fa-github"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                           <i class="fa-brands fa-twitter"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                           <i class="fa-brands fa-dribbble"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <a href="#">
+                           <i class="fa-brands fa-facebook"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  
+               </section>
+               <!-- COPYRIGHT SECTION ENDS -->
+            </main>
+         </div>
+         <!-- SCROLL BAR STARTS -->
+         <div class="scroll-progress hide-mobile">
+            <div>
+               <div></div>
+            </div>
+         </div>
+         <!-- SCROLL BAR ENDS -->
+      </div>
+      <!-- WRAPPER ENDS -->
+      <script src="js/jquery-3.6.3.min.js"></script>
+      <script src="js/jquery.mCustomScrollbar.min.js"></script>
+      <script src="js/swiper-bundle.min.js"></script>
+      <script src="js/wow.min.js"></script>
+      <script src="js/custom.js"></script>
+
+      <!-- Style Switcher - Demo Only -->
+      <script src="js/styleswitcher.js"></script>
+   </body>
+
+<!-- Mirrored from slimhamdi.net/salimov/demos/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Feb 2023 10:26:59 GMT -->
+</html>
