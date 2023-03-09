@@ -2588,4 +2588,9 @@ header .mobile-menu {
 	.copyright {
 		padding: 20px 0 30px;
 	}
+
+	.resbutton{
+		background-color: #ffc107 !important;
+		color: white;
+	}
 }
